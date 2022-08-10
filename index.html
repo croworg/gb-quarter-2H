@@ -7,6 +7,7 @@
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Document</title>
+    <link href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
@@ -22,31 +23,28 @@
         </div>
         <div class="center">
             <form action="" class="search">
-                <select id="browse" name="browse">
-                    <option hidden="hidden" selected="selected" value="">Browse</option>
-                    <option class="section">Women</option>
-                    <option>Dresses</option>
-                    <option>Tops</option>
-                    <option>Sweaters/Knits</option>
-                    <option>Jackets/Coats</option>
-                    <option>Blazers</option>
-                    <option>Denim</option>
-                    <option>Leggings/Pants</option>
-                    <option>Skirts/Shorts</option>
-                    <option>Accessories</option>
-                    <option>Bags/Purses</option>
-                    <option>Swimwear/Underwear</option>
-                    <option>Nightwear</option>
-                    <option>Shoes</option>
-                    <option>Beauty</option>
-                    <option class="section">Men</option>
-                    <option>Tees/Tank tops</option>
-                    <option>Shirts/Polos</option>
-                    <option>Sweaters</option>
-                    <option>Sweatshirts/Hoodies</option>
-                    <option>Blazers</option>
-                    <option>Jackets/vests</option>
-                </select>
+                <details class="search-select">
+                    <summary class="search-select__list">Browse&nbsp;&nbsp;</summary>
+                    <div class="select-box">
+                        <a class="search-select__section" href="#">Women</a>
+                        <a class="search-select__item" href="#">Dresses</a>
+                        <a class="search-select__item" href="#">Tops</a>
+                        <a class="search-select__item" href="#">Sweaters/Knits</a>
+                        <a class="search-select__item" href="#">Jackets/Coats</a>
+                        <a class="search-select__item" href="#">Blazers</a>
+                        <a class="search-select__item" href="#">Denim</a>
+                        <a class="search-select__item" href="#">Leggings/Pants</a>
+                        <a class="search-select__item" href="#">Skirts/Shorts</a>
+                        <a class="search-select__item" href="#">Accessories</a>
+                        <a class="search-select__section" href="#">Men</a>
+                        <a class="search-select__item" href="#">Tees/Tank tops</a>
+                        <a class="search-select__item" href="#">Shirts/Polos</a>
+                        <a class="search-select__item" href="#">Sweaters</a>
+                        <a class="search-select__item" href="#">Sweatshirts/Hoodies</a>
+                        <a class="search-select__item" href="#">Blazers</a>
+                        <a class="search-select__item" href="#">Jackets/vests</a>
+                    </div>
+                </details>
                 <input name="search" placeholder="Search.." type="text">
                 <button type="submit"><img alt="search" src="./img/search.svg"></button>
             </form>

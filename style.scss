@@ -108,6 +108,75 @@ ol li {
       .search {
         display: flex;
 
+        .search-select {
+          .select-box {
+            display: block;
+            position: absolute;
+          }
+
+          &__list {
+            list-style-type: none;
+            text-align: center;
+            width: 87px;
+            height: 38px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 36px;
+            letter-spacing: 0.025em;
+            background-color: #f9f9f9;
+            background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%);
+            border: 1px solid #e6e6e6;
+            border-radius: 3px 0px 0px 3px;
+            outline: none;
+          }
+
+          &__list:after {
+            content: "\25BC";
+            color: #838383;
+          }
+
+          &[open] .search-select__list {
+            list-style-type: none;
+          }
+
+          &[open] .search-select__list:after {
+            content: "\25B6";
+            color: #838383;
+          }
+
+          .select-box {
+            background-color: white;
+            width: 262px;
+            border-radius: 5px;
+            padding: 0 15px 15px;
+            //border: 1px solid red;
+            z-index: 99;
+          }
+
+          &__section {
+            display: block;
+            font-size: 14px;
+            line-height: 32px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.025em;
+            color: #232323;
+            border-bottom: 1px solid #e8e8e8;
+            margin: 8px auto;
+          }
+
+          &__item {
+            display: block;
+            width: 262px;
+            font-size: 14px;
+            line-height: 28px;
+            font-weight: 400;
+            letter-spacing: 0.025em;
+            color: #4f4f4f;
+            margin-left: 5px;
+          }
+        }
+
         select,
         select > option {
           width: 87px;
