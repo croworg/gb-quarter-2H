@@ -7,7 +7,7 @@
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Document</title>
-    <link href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/8bcfed9d71.js"></script>
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
@@ -38,19 +38,59 @@
                         <a class="search-select__item" href="#">Accessories</a>
                         <a class="search-select__section" href="#">Men</a>
                         <a class="search-select__item" href="#">Tees/Tank tops</a>
-                        <a class="search-select__item" href="#">Shirts/Polos</a>
+                        <a class="search-select__item" href="#">Shirts/Polo</a>
                         <a class="search-select__item" href="#">Sweaters</a>
                         <a class="search-select__item" href="#">Sweatshirts/Hoodies</a>
                         <a class="search-select__item" href="#">Blazers</a>
                         <a class="search-select__item" href="#">Jackets/vests</a>
                     </div>
                 </details>
-                <input name="search" placeholder="Search.." type="text">
+                <label>
+                    <input name="search" placeholder="Search.." type="text">
+                </label>
                 <button type="submit"><img alt="search" src="./img/search.svg"></button>
             </form>
         </div>
         <div class="right">
-            <img alt="" class="cart" src="./img/cart.svg">
+            <!--<img alt="" class="cart" src="./img/cart.svg">--> <!-- Icon from layout in svg format -->
+            <details class="cart-menu">
+                <summary><i class="fa-solid fa-cart-shopping"></i></summary>
+                <div class="cart-box">
+                    <div>
+                        <div class="cart-item">
+                            <img alt="Icon" class="cart-item__icon" src="./img/cart-item-1.png">
+                            <div class="cart-item__desc">
+                                <p>Rebox Zane</p>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half-stroke"></i></div>
+                                <p>1 x $250</p>
+                            </div>
+                            <a class="cart-item__close" href="#!"><img alt="close" class=""
+                                                                       src="./img/cart-close-red.png"></a>
+                        </div>
+                        <div class="cart-item">
+                            <img alt="Icon" class="cart-item__icon" src="./img/cart-item-2.png">
+                            <div class="cart-item__desc">
+                                <p class="name">Rebox Zane</p>
+                                <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star-half-stroke"></i></div>
+                                <p class="qty highlighted">1 x $250</p>
+                            </div>
+                            <a class="cart-item__close" href="#!"><img alt="close" class=""
+                                                                       src="./img/cart-close-red.png"></a>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="total">
+                        <p>TOTAL</p>
+                        <p>$500.00</p>
+                    </div>
+                    <a class="cart-btn" href="#!">Checkout</a>
+                    <a class="cart-btn" href="#!">Go to cart</a>
+                </div>
+            </details>
             <a class="account" href="">My account</a>
         </div>
     </div>
@@ -72,7 +112,6 @@
                         <a class="mega-link" href="#">Leggings/Pants</a>
                         <a class="mega-link" href="#">Skirts/Shorts</a>
                         <a class="mega-link" href="#">Accessories</a>
-
                     </div>
                     <div class="mega-box__item">
                         <h3 class="mega-heading">WOMEN</h3>
@@ -222,162 +261,181 @@
     </div>
 </nav>
 <main class="brand">
-    <div class="container brand-demo">
-        <div class="brand-header">
-            <a class="brand-link" href="#">
-                <div class="brand-title">
-                    <p class="title">THE BRAND</p>
-                    <p class="subtitle">OF LUXURIOUS <span class="subtitle-hl">FASHION</span></p>
-                </div>
-            </a>
+    <div class="container">
+        <div class="brand-demo">
+            <div class="brand-header">
+                <a class="brand-link" href="#">
+                    <div class="brand-title">
+                        <p class="title">THE BRAND</p>
+                        <p class="subtitle">OF LUXURIOUS <span class="subtitle-hl">FASHION</span></p>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 </main>
 <section class="trends">
-    <div class="container trends-section">
-        <a class="trends-item card-1" href="#card-1">
-            <article class="card-label">
-                <p class="card-label__offer">hot deal</p>
-                <p class="card-label__title">for men</p>
-            </article>
-        </a>
-        <a class="trends-item card-2" href="#card-1">
-            <article class="card-label">
-                <p class="card-label__offer">30% offer</p>
-                <p class="card-label__title">women</p>
-            </article>
-        </a>
-        <a class="trends-item card-3" href="#card-1">
-            <article class="card-label">
-                <p class="card-label__offer">luxurious & trendy</p>
-                <p class="card-label__title">accessories</p>
-            </article>
-        </a>
-        <a class="trends-item card-4" href="#card-1">
-            <article class="card-label">
-                <p class="card-label__offer">new arrivals</p>
-                <p class="card-label__title">for kids</p>
-            </article>
-        </a>
+    <div class="container">
+        <div class="trends-section">
+            <a class="trends-item card-1" href="#">
+                <article class="card-label">
+                    <p class="card-label__offer">hot deal</p>
+                    <p class="card-label__title">for men</p>
+                </article>
+            </a>
+            <a class="trends-item card-2" href="#">
+                <article class="card-label">
+                    <p class="card-label__offer">30% offer</p>
+                    <p class="card-label__title">women</p>
+                </article>
+            </a>
+            <a class="trends-item card-3" href="#">
+                <article class="card-label">
+                    <p class="card-label__offer">luxurious & trendy</p>
+                    <p class="card-label__title">accessories</p>
+                </article>
+            </a>
+            <a class="trends-item card-4" href="#">
+                <article class="card-label">
+                    <p class="card-label__offer">new arrivals</p>
+                    <p class="card-label__title">for kids</p>
+                </article>
+            </a>
+        </div>
     </div>
 </section>
 <section class="featured">
     <div class="container">
         <header class="featured-header">
-            <p class="title">Featured Items</p>
+            <h2 class="title">Featured Items</h2>
             <p class="subtitle">Shop for items based on what we featured in this week</p>
         </header>
-        <div class="featured-box">
-            <article class="featured-box-item item-1">
-                <a href="#product">
-                    <div class="product-image">
-                        <div class="product-image__add">
-                            <a class="add-button" href="#cart">Add to Cart</a>
-                        </div>
+        <div class="card-box">
+            <article class="card card-1">
+                <a class="x-item" href="#">
+                    <div class="x-item-image">
+                        <img alt="item-1" src="./img/item-1.png">
                     </div>
-                    <div class="product-text">Mango People T-shirt<span class="product-price">$52.00</span></div>
+                    <div class="x-item-desc">
+                        <p class="x-text">Mango People T-shirt</p>
+                        <p class="x-price">$52.00</p>
+                    </div>
                 </a>
+                <a class="x-add" href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp; Add to Cart</a>
             </article>
-            <article class="featured-box-item item-2">
-                <a href="#">
-                    <div class="product-image">
-                        <div class="product-image__add">
-                            <a class="add-button" href="#cart">Add to Cart</a>
-                        </div>
+            <article class="card card-2">
+                <a class="x-item" href="#">
+                    <div class="x-item-image">
+                        <img alt="item-2" src="./img/item-2.png">
                     </div>
-                    <div class="product-text">Mango People T-shirt<span class="product-price">$52.00</span></div>
+                    <div class="x-item-desc">
+                        <p class="x-text">Mango People T-shirt</p>
+                        <p class="x-price">$52.00</p>
+                    </div>
                 </a>
+                <a class="x-add" href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp; Add to Cart</a>
             </article>
-            <article class="featured-box-item item-3">
-                <a href="#">
-                    <div class="product-image">
-                        <div class="product-image__add">
-                            <a class="add-button" href="#cart">Add to Cart</a>
-                        </div>
+            <article class="card card-3">
+                <a class="x-item" href="#">
+                    <div class="x-item-image">
+                        <img alt="item-3" src="./img/item-3.png">
                     </div>
-                    <div class="product-text">Mango People T-shirt<span class="product-price">$52.00</span></div>
+                    <div class="x-item-desc">
+                        <p class="x-text">Mango People T-shirt</p>
+                        <p class="x-price">$52.00</p>
+                    </div>
                 </a>
+                <a class="x-add" href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp; Add to Cart</a>
             </article>
-            <article class="featured-box-item item-4">
-                <a href="#">
-                    <div class="product-image">
-                        <div class="product-image__add">
-                            <a class="add-button" href="#cart">Add to Cart</a>
-                        </div>
+            <article class="card card-4">
+                <a class="x-item" href="#">
+                    <div class="x-item-image">
+                        <img alt="item-4" src="./img/item-4.png">
                     </div>
-                    <div class="product-text">Mango People T-shirt<span class="product-price">$52.00</span></div>
+                    <div class="x-item-desc">
+                        <p class="x-text">Mango People T-shirt</p>
+                        <p class="x-price">$52.00</p>
+                    </div>
                 </a>
+                <a class="x-add" href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp; Add to Cart</a>
             </article>
-            <article class="featured-box-item item-5">
-                <a href="#">
-                    <div class="product-image">
-                        <div class="product-image__add">
-                            <a class="add-button" href="#cart">Add to Cart</a>
-                        </div>
+            <article class="card card-5">
+                <a class="x-item" href="#">
+                    <div class="x-item-image">
+                        <img alt="item-5" src="./img/item-5.png">
                     </div>
-                    <div class="product-text">Mango People T-shirt<span class="product-price">$52.00</span></div>
+                    <div class="x-item-desc">
+                        <p class="x-text">Mango People T-shirt</p>
+                        <p class="x-price">$52.00</p>
+                    </div>
                 </a>
+                <a class="x-add" href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp; Add to Cart</a>
             </article>
-            <article class="featured-box-item item-6">
-                <a href="#">
-                    <div class="product-image">
-                        <div class="product-image__add">
-                            <a class="add-button" href="#cart">Add to Cart</a>
-                        </div>
+            <article class="card card-6">
+                <a class="x-item" href="#">
+                    <div class="x-item-image">
+                        <img alt="item-6" src="./img/item-6.png">
                     </div>
-                    <div class="product-text">Mango People T-shirt<span class="product-price">$52.00</span></div>
+                    <div class="x-item-desc">
+                        <p class="x-text">Mango People T-shirt</p>
+                        <p class="x-price">$52.00</p>
+                    </div>
                 </a>
+                <a class="x-add" href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp; Add to Cart</a>
             </article>
-            <article class="featured-box-item item-7">
-                <a href="#">
-                    <div class="product-image">
-                        <div class="product-image__add">
-                            <a class="add-button" href="#cart">Add to Cart</a>
-                        </div>
+            <article class="card card-7">
+                <a class="x-item" href="#">
+                    <div class="x-item-image">
+                        <img alt="item-7" src="./img/item-7.png">
                     </div>
-                    <div class="product-text">Mango People T-shirt<span class="product-price">$52.00</span></div>
+                    <div class="x-item-desc">
+                        <p class="x-text">Mango People T-shirt</p>
+                        <p class="x-price">$52.00</p>
+                    </div>
                 </a>
+                <a class="x-add" href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp; Add to Cart</a>
             </article>
-            <article class="featured-box-item item-8">
-                <a href="#">
-                    <div class="product-image">
-                        <div class="product-image__add">
-                            <a class="add-button" href="#cart">Add to Cart</a>
-                        </div>
+            <article class="card card-8">
+                <a class="x-item" href="#">
+                    <div class="x-item-image">
+                        <img alt="item-8" src="./img/item-8.png">
                     </div>
-                    <div class="product-text">Mango People T-shirt<span class="product-price">$52.00</span></div>
+                    <div class="x-item-desc">
+                        <p class="x-text">Mango People T-shirt</p>
+                        <p class="x-price">$52.00</p>
+                    </div>
                 </a>
+                <a class="x-add" href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp; Add to Cart</a>
             </article>
         </div>
         <a class="featured-button" href="#">Browse All Products&nbsp;&nbsp;&nbsp;⮕</a>
     </div>
 </section>
-<section class="banner container">
-    <div class="banner-box">
-        <a class="special-offer" href="#special-offer">
-            <div class="special-offer__title">
-                <p class="offer">30% <span class="highlighted">OFFER</span></p>
-                <p>FOR WOMEN</p>
+<section class="banner">
+    <div class="container">
+        <div class="banner-box">
+            <a class="special-offer" href="#">
+                <div class="special-offer__title">
+                    <h2 class="title">30% <span class="highlighted">OFFER</span></h2>
+                    <p>FOR WOMEN</p>
+                </div>
+            </a>
+            <div class="strengths">
+                <ul>
+                    <li class="strengths-item delivery"><span class="details-header">Free Delivery</span>
+                        Worldwide delivery on all. Authoritatively morph next-generation innovation with extensive
+                        models.
+                    </li>
+                    <li class="strengths-item sales"><span class="details-header">Sales &amp;&nbsp;discounts</span>
+                        Worldwide delivery on all. Authoritatively morph next-generation innovation with extensive
+                        models.
+                    </li>
+                    <li class="strengths-item quality"><span class="details-header">Quality assurance</span>
+                        Worldwide delivery on all. Authoritatively morph next-generation innovation with extensive
+                        models.
+                    </li>
+                </ul>
             </div>
-        </a>
-        <div class="brand-strengths">
-            <ul>
-                <li class="delivery"><span class="details-header">Free Delivery</span>
-                    <!--жуткий текст с ошибками, дроблением слов и без переносов-->
-                    Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                    models.
-                </li>
-                <li class="sales"><span class="details-header">Sales &amp;&nbsp;discounts</span>
-                    <!--жуткий текст с ошибками, дроблением слов и без переносов-->
-                    Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                    models.
-                </li>
-                <li class="quality"><span class="details-header">Quality assurance</span>
-                    <!--жуткий текст с ошибками, дроблением слов и без переносов-->
-                    Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                    models.
-                </li>
-            </ul>
         </div>
     </div>
 </section>
@@ -394,18 +452,20 @@
             </figure>
             <nav>
                 <ol class="pagination">
-                    <li><a class="page active" href="#page-1"></a></li>
-                    <li><a class="page" href="#page-2"></a></li>
-                    <li><a class="page" href="#page-3"></a></li>
+                    <li><a class="page active" href="#"></a></li>
+                    <li><a class="page" href="#"></a></li>
+                    <li><a class="page" href="#"></a></li>
                 </ol>
             </nav>
         </div>
         <form class="subscribe-form">
             <p class="subscribe-form__title">
                 Subscribe<br>
-                <span class="subtitle"> FOR OUR NEWLETTER AND PROMOTION</span>
+                <span class="subtitle"> FOR OUR NEWSLETTER AND PROMOTION</span>
             </p>
-            <input class="subscribe-form__email" placeholder="Enter Your Email" required type="email">
+            <label>
+                <input class="subscribe-form__email" placeholder="Enter Your Email" required type="email">
+            </label>
             <button class="subscribe-form__button">Subscribe</button>
         </form>
     </div>
@@ -417,7 +477,7 @@
                 <img alt="" class="brand-about__logo" src="./img/logo.png">
                 <span class="brand-about__logo-text">BRAN<span class="marked-text">D</span></span>
             </a>
-            <article class="brand-about__text">Objectively transition extensive data rather than cross functional
+            <article class="brand-about__text">Objectively transition extensive data rather than cross-functional
                 solutions.
                 Monotonectally syndicate
                 multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of
@@ -430,7 +490,7 @@
         </div>
         <nav class="footer-bar__menu">
             <ol class="nav-box box-1">
-                <li class="header"><a class="link" href="#company">Company</a></li>
+                <li class="header"><a class="link" href="#">Company</a></li>
                 <li><a class="link" href="#">Home</a></li>
                 <li><a class="link" href="#">Shop</a></li>
                 <li><a class="link" href="#">About</a></li>
@@ -438,15 +498,15 @@
                 <li><a class="link" href="#">Contact</a></li>
             </ol>
             <ol class="nav-box box-2">
-                <li class="header"><a class="link" href="#information">Information</a></li>
-                <li><a class="link" href="#">Tearms & Condition</a></li>
+                <li class="header"><a class="link" href="#">Information</a></li>
+                <li><a class="link" href="#">Terms & Condition</a></li>
                 <li><a class="link" href="#">Privacy Policy</a></li>
                 <li><a class="link" href="#">How to Buy</a></li>
                 <li><a class="link" href="#">How to Sell</a></li>
                 <li><a class="link" href="#">Promotion</a></li>
             </ol>
             <ol class="nav-box box-3">
-                <li class="header"><a class="link" href="#gallery">Shop gallery</a></li>
+                <li class="header"><a class="link" href="#">Shop gallery</a></li>
                 <li><a class="link" href="#">Men</a></li>
                 <li><a class="link" href="#">Women</a></li>
                 <li><a class="link" href="#">Child</a></li>
@@ -459,11 +519,11 @@
         <div class="container flex-box">
             <section class="rights">&copy;&nbsp;2017 Brand All Rights Reserved.</section>
             <nav class="social">
-                <a class="social-icon" href="#facebook"><img alt="" class="icon" src="./img/facebook.svg"></a>
-                <a class="social-icon" href="#twitter"><img alt="" class="icon" src="./img/twitter.svg"></a>
-                <a class="social-icon" href="#linked-in"><img alt="" class="icon" src="./img/linked-in.svg"></a>
-                <a class="social-icon" href="#pinterest"><img alt="" class="icon" src="./img/pinterest.svg"></a>
-                <a class="social-icon" href="#google-pl"><img alt="" class="icon" src="./img/google-p.svg"></a>
+                <a class="social-icon" href="#"><img alt="" class="icon" src="./img/facebook.svg"></a>
+                <a class="social-icon" href="#"><img alt="" class="icon" src="./img/twitter.svg"></a>
+                <a class="social-icon" href="#"><img alt="" class="icon" src="./img/linked-in.svg"></a>
+                <a class="social-icon" href="#"><img alt="" class="icon" src="./img/pinterest.svg"></a>
+                <a class="social-icon" href="#"><img alt="" class="icon" src="./img/google-p.svg"></a>
             </nav>
         </div>
     </div>
