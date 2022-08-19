@@ -339,7 +339,7 @@
       width: 44px;
       height: 38px;
       margin-left: 1px;
-      background-image: url("../img/logo.svg");
+      background-image: url("../img/icon/logo.svg");
     }
 
     .search {
@@ -347,26 +347,26 @@
       margin-left: 8px;
       width: 26px;
       height: 26px;
-      background-image: url("../img/search.svg");
+      background-image: url("../img/icon/search.svg");
     }
 
     .burger {
       width: 32px;
       height: 23px;
-      background-image: url("../img/burger.svg");
+      background-image: url("../img/icon/burger.svg");
     }
 
     .registration {
       width: 29px;
       height: 29px;
-      background-image: url("../img/registration.svg");
+      background-image: url("../img/icon/registration.svg");
     }
 
     .cart {
       position: relative;
       width: 32px;
       height: 29px;
-      background-image: url("../img/cart.svg");
+      background-image: url("../img/icon/cart.svg");
       margin-right: 10px;
 
       &:after {
@@ -483,6 +483,44 @@
         right: 35px;
         left: auto;
       }
+    }
+  }
+}
+
+.location {
+  background-color: $location-bg;
+  height: 148px;
+
+  &__box {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f16d7f;
+  }
+
+  .breadcrumb {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #636363;
+    margin-bottom: 0;
+
+    .active {
+      color: $highlighted-text;
+      font-weight: 700;
+    }
+
+    a:hover {
+      color: $highlighted-text;
     }
   }
 }

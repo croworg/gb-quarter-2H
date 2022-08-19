@@ -85,7 +85,6 @@ a {
 abbr[title] {
     border-bottom: none; /* 1 */
     text-decoration: underline; /* 2 */
-    text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -348,9 +347,15 @@ template {
     display: none;
 }
 
-/* Custom normalize styles */
+
+/* ------------------------ Custom reset styles ------------------------- */
 
 dl, ol, ul {
     margin: 0;
     padding: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
 }

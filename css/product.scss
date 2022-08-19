@@ -1,46 +1,9 @@
-// Single page styles
+// Product page styles
 
 @import "common";
 @import "header";
 @import "footer";
 
-.location {
-  background-color: $location-bg;
-  height: 148px;
-
-  &__box {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .page {
-    font-size: 24px;
-    line-height: 20px;
-    font-weight: 900;
-    text-transform: uppercase;
-    color: #f16d7f;
-  }
-
-  .breadcrumb {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #636363;
-    margin-bottom: 0;
-
-    .active {
-      color: $highlighted-text;
-      font-weight: 700;
-    }
-
-    a:hover {
-      color: $highlighted-text;
-    }
-  }
-}
 
 .carousel {
   position: relative;
@@ -106,15 +69,13 @@
       width: max-content;
       margin: 0 auto 17px;
 
-
       &__name {
-        max-width: max-content;
-        margin: 0 auto;
         font-size: 14px;
-        line-height: 1;
         font-weight: 700;
+        max-width: max-content;
+        margin: 0 auto 14px;
+        line-height: 1;
         color: $highlighted-text;
-        margin-bottom: 14px;
       }
 
       &__underline {
@@ -274,131 +235,6 @@
       text-transform: uppercase;
       color: #4d4d4d;
       margin-bottom: 72px;
-    }
-  }
-
-  &__box {
-    display: flex;
-    justify-content: space-between;
-    //gap: 32px;
-    flex-wrap: wrap;
-
-    & > a {
-      display: block;
-    }
-
-
-    .card {
-      position: relative; // for "Add cart" button
-      width: 263px;
-      border: none;
-      box-shadow: transparent;
-      transition: all .2s ease-in-out;
-
-      .x-item {
-        display: block;
-
-        &-image {
-          position: relative; // for card fade out layer
-          width: 100%;
-          background-color: #efefef;
-
-          img {
-            display: block;
-            width: 100%;
-            height: 280px;
-            object-fit: contain;
-          }
-        }
-
-        &-desc {
-          padding: 15px 10px;
-        }
-
-        &-desc {
-          .x-text {
-            font-size: 13px;
-            line-height: 1.2;
-            font-weight: 400;
-            text-transform: uppercase;
-            color: $text-main;
-          }
-
-          .x-price {
-            font-size: 16px;
-            line-height: 1.2;
-            font-weight: 700;
-            text-transform: uppercase;
-            color: $highlighted-text;
-            margin-top: 10px;
-          }
-        }
-      }
-
-      & .x-item-image:before {
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        background-color: rgb(58, 56, 56);
-        transition: opacity .3s ease-in-out;
-      }
-
-      &:hover .x-item-image:before {
-        opacity: 0.83;
-      }
-
-      .x-add {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        opacity: 0;
-        font-size: 13px;
-        line-height: 19px;
-        font-weight: 700;
-        color: white;
-        background-color: transparent;
-        border: 1px solid white;
-        padding: 10px 12px;
-        white-space: nowrap;
-        transform: translate(-50%, 50px);
-        transition: all .2s ease-in-out;
-
-        .fa-cart-shopping {
-          font-size: 18px;
-          line-height: 18px;
-          vertical-align: middle;
-        }
-
-        img {
-          width: 20px;
-          vertical-align: middle;
-          margin-right: .3em;
-          filter: invert(1);
-        }
-
-        &:hover {
-          background-color: #fff;
-          color: $text-main;
-
-          img {
-            filter: invert(0);
-          }
-        }
-      }
-
-      &:hover {
-        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.15);
-
-        .x-add {
-          transform: translate(-50%, 98px);
-          opacity: 1;
-        }
-      }
     }
   }
 }
