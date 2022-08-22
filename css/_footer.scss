@@ -1,4 +1,4 @@
-// Footer secrion styles
+// Footer styles
 
 .banner {
 
@@ -83,19 +83,19 @@
 
       .delivery {
         &:before {
-          content: url("../img/deivery.png");
+          content: url("../img/icon/delivery.png");
         }
       }
 
       .sales {
         &:before {
-          content: url("../img/sale.png");
+          content: url("../img/icon/sale.png");
         }
       }
 
       .quality {
         &:before {
-          content: url("../img/crown.png");
+          content: url("../img/icon/crown.png");
         }
       }
     }
