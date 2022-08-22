@@ -2,7 +2,6 @@
 
 @import "common";
 @import "header";
-@import "footer";
 
 .brand {
   background-color: #e8e8e8;
@@ -18,9 +17,15 @@
       width: 50%;
       transform: translateY(224px);
 
-      .brand-link > .brand-title {
-        border-left: 12px solid $highlighted-text;
-        padding-left: 12px;
+      .brand-link {
+        &:hover {
+          color: $text-main;
+        }
+
+        > .brand-title {
+          border-left: 12px solid $highlighted-text;
+          padding-left: 12px;
+        }
       }
 
       .title {
@@ -55,12 +60,15 @@
   height: 822px;
 
   .trends-item {
-    //position: relative;
     flex: 0 0 260px;
     width: 560px;
     display: block;
     position: relative;
     background-color: lightcoral;
+
+    &:hover .card-label__offer {
+      color: $text-main;
+    }
 
     .card-label {
       position: absolute;
@@ -78,37 +86,19 @@
         letter-spacing: 0.025em;
       }
 
+
       &__title {
         font-size: 30px;
         color: $highlighted-text;
       }
     }
-
-    //.category {
-    //  color: $highlighted-text;
-    //  font-weight: 700;
-    //  font-size: 24px;
-    //  line-height: 28px;
-    //}
   }
 
   .card-1 {
-    //position: relative;
     flex: 0 0 542px;
     background: url('../img/card-1.png');
 
-    //&:hover::before { // pseudo element version
-    //  content: "";
-    //  position: absolute;
-    //  top: 0px;
-    //  left: 0px;
-    //  width: 100%;
-    //  height: 100%;
-    //  background-color: $card-fade;
-    //}
-
     &:hover {
-      // gradient version
       background: linear-gradient($card-fade, $card-fade), url('../img/card-1.png');
     }
   }
@@ -166,3 +156,5 @@
     width: max-content;
   }
 }
+
+@import "footer";
