@@ -2,8 +2,6 @@
 
 @import "common";
 @import "header";
-@import "footer";
-
 
 .carousel {
   position: relative;
@@ -238,3 +236,5 @@
     }
   }
 }
+
+@import "footer";

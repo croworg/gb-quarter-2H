@@ -1,0 +1,189 @@
+// Catalog page styles
+
+@import "common";
+@import "header";
+
+.catalog {
+  &__box {
+    display: flex;
+    flex: 0 0;
+    column-gap: 50px;
+    padding-top: 59px;
+  }
+
+  &__category {
+    width: 243px;
+    flex: 0 0 243px;
+  }
+
+  &__cat-select {
+    margin-bottom: 1rem;
+    color: #6f6e6e;
+  }
+
+  &__cs-default {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  &__cs-list {
+    padding: 1rem 0 0 calc(1rem + 5px);
+  }
+
+  &__card-box {
+    width: 100%;
+  }
+
+  &__size-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+  }
+
+  label {
+    margin-left: .5rem;
+  }
+
+  &__prices {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -2px;
+  }
+
+  &__nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto 110px;
+  }
+
+  &__nav-box_btn {
+    line-height: 1;
+    padding: 16px 45px;
+  }
+
+  &__filter-box {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    line-height: 28px;
+    color: #6f6e6e;
+    padding-bottom: 43px;
+
+    > * {
+      flex: 1 0 calc(100% / 3 - 60px);
+    }
+  }
+
+  &__filter-heading {
+    margin-bottom: 18px;
+  }
+
+  &__sort {
+    font-size: 14px;
+    display: flex;
+    padding: 10px;
+    background-color: #f3f3f3;
+  }
+
+  &__dd-label {
+    font-size: 14px;
+    padding: 10px 13px;
+    background-color: #ffffff;
+    border-width: 1px 0 1px 1px;
+    border-style: solid;
+    border-color: #ebebeb;
+  }
+
+  &__dd-label:not(:first-child) {
+    margin-left: 10px;
+  }
+
+  // ---- dropdown ----
+  &__dd-default {
+    padding: 10px 13px;
+    width: 90px;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+
+    &_show {
+      width: 65px;
+    }
+  }
+
+
+  &__dd-list {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: calc(90px - 2px);
+    position: absolute;
+    left: 1px;
+    z-index: 20;
+    border: transparent;
+
+    &_show {
+      width: calc(65px - 2px);
+    }
+  }
+
+
+  .x-dropdown__arrow {
+    top: 16px;
+  }
+
+  .card-box {
+    padding-top: 48px;
+  }
+
+  .page-link {
+    color: $grey-83;
+
+    &:hover {
+      color: $highlighted-text;
+    }
+  }
+}
+
+.features {
+  background-color: $text-main;
+  color: $white;
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    padding: 89px 0 114px;
+    column-gap: 2rem;
+  }
+
+  &__item {
+    flex: 0 1 310px;
+    min-width: 200px;
+    text-align: center;
+    color: $white-fb;
+  }
+
+  &__item-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    text-align: center;
+  }
+
+  &__item-heading {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    margin: 32px auto 17px;
+  }
+
+  &__item-text {
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+  }
+}
+
+@import "footer";
