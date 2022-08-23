@@ -260,6 +260,10 @@
             &:hover {
               filter: grayscale(0);
             }
+
+            img {
+              display: block;
+            }
           }
         }
 

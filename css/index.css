@@ -10,6 +10,10 @@ body {
   color: #222222;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 h2 {
   font-size: 1rem;
   line-height: 1;
@@ -21,6 +25,10 @@ a {
 }
 a:hover {
   color: rgb(241, 109, 127);
+}
+
+i {
+  font-style: unset;
 }
 
 .link {
@@ -60,15 +68,14 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 5px;
   cursor: pointer;
-  animate: 0.2s;
-  box-shadow: 0px 0px 0px #000000;
+  box-shadow: 0 0 0 #000000;
   background: rgb(241, 109, 127);
   border-radius: 1px;
-  border: 0px solid #000000;
+  border: 0 solid #000000;
 }
 
 input[type=range]::-webkit-slider-thumb {
-  box-shadow: 0px 0px 0px #000000;
+  box-shadow: 0 0 0 #000000;
   border: 1px solid rgb(241, 109, 127);
   height: 16px;
   width: 16px;
@@ -133,7 +140,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   font-weight: 900;
 }
 
-/* Buttons */
+/* Custom blocks */
 .btn-default, .btn-inv, .btn {
   display: block;
   text-align: center;
@@ -150,6 +157,14 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   color: #ffffff;
   background: rgb(241, 109, 127);
   border: 1px solid rgb(241, 109, 127);
+}
+
+.btn-grey {
+  border: 1px solid #e1e1e1;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #4a4a4a;
 }
 
 .btn-inv {
@@ -170,7 +185,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   color: rgb(241, 109, 127);
 }
 .x-dropdown__arrow, .x-dropdown[open]::after, .x-dropdown::after {
-  font-family: FontAwesome;
+  font-family: "FontAwesome", serif;
   position: absolute;
   top: 0.5em;
   right: 8px;
@@ -185,11 +200,10 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .x-dropdown__default {
   letter-spacing: 0.025em;
   list-style-type: none;
-  padding: 0 1rem;
+  padding: 0 2rem 1rem 0;
   border-left: 5px solid rgb(241, 109, 127);
   border-bottom: 1px solid #e9e9e9;
   outline: none;
-  padding-right: 2rem;
 }
 .x-dropdown__list {
   background-color: #fff;
@@ -212,6 +226,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   box-shadow: transparent;
   transition: all 0.2s ease-in-out;
   border: none;
+  border-radius: 0;
 }
 .card-box .card .x-item {
   display: block;
@@ -300,6 +315,24 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .card-box .card:hover .x-add {
   transform: translate(-50%, 98px);
   opacity: 1;
+}
+
+.x-btn-close {
+  align-self: center;
+  filter: grayscale(1) brightness(2);
+  transition: filter 0.2s ease-in-out;
+  padding: 10px 5px;
+  animation: 1s;
+}
+.x-btn-close:hover {
+  filter: grayscale(0);
+}
+.x-btn-close:hover > img {
+  transform: scale(1.5) rotate(90deg);
+}
+.x-btn-close__img {
+  display: block;
+  transition: all 300ms ease-in-out;
 }
 
 .top-bar {
@@ -528,6 +561,9 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 .top-bar .flex-box .right .cart-menu .cart-item__close:hover {
   filter: grayscale(0);
+}
+.top-bar .flex-box .right .cart-menu .cart-item__close img {
+  display: block;
 }
 .top-bar .flex-box .right .cart-menu .total {
   display: flex;

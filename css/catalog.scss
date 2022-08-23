@@ -14,6 +14,10 @@
   &__category {
     width: 243px;
     flex: 0 0 243px;
+
+    .x-dropdown__default {
+      padding: 0 0 0 11px;
+    }
   }
 
   &__cat-select {
@@ -28,7 +32,8 @@
   }
 
   &__cs-list {
-    padding: 1rem 0 0 calc(1rem + 5px);
+    padding: 1em 0 1em 11px;
+    border-left: 5px solid transparent;
   }
 
   &__card-box {
@@ -126,7 +131,6 @@
       width: calc(65px - 2px);
     }
   }
-
 
   .x-dropdown__arrow {
     top: 16px;

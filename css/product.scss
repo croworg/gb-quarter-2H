@@ -139,7 +139,7 @@
       max-width: 540px;
       margin: 0 auto;
 
-      .options-box {
+      .options__box {
         display: flex;
         justify-content: space-between;
         flex: 0 0 144px;
@@ -151,9 +151,10 @@
           text-align: left;
         }
 
-        p {
+        .option__name {
           font-size: 14px;
           font-weight: 700;
+          padding-bottom: 16px;
         }
 
 

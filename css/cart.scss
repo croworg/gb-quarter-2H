@@ -1,0 +1,197 @@
+// Cart page styles
+
+@import "common";
+@import "header";
+
+.cart-list {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #656565;
+
+  .lighten {
+    //font-style: normal;
+    color: lighten(#656565, 40%);
+  }
+
+  &__box {
+    padding: 90px 0 63px;
+  }
+
+  &__header {
+    padding: 20px 0;
+    color: $text-main;
+  }
+
+  &__item {
+    padding: 25px 0;
+  }
+
+  &__header,
+  &__item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $grey-e1;
+
+    & > li:not(:first-of-type) {
+      text-align: center;
+    }
+
+    .prod-details {
+      flex: 1 0 30%;
+
+      img {
+        float: left;
+        margin-right: 21px;
+      }
+    }
+
+    .price {
+      flex: 0 0 15%;
+    }
+
+    .quantity {
+      flex: 0 0 15%;
+    }
+
+    .shipping {
+      flex: 0 0 13%;
+    }
+
+    .subtotal {
+      flex: 0 0 13%;
+    }
+
+    .action {
+      flex: 0 0 5%;
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    .x-item__desc-link {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .x-item__desc {
+      height: 3em;
+      text-transform: uppercase;
+      color: $text-main;
+    }
+
+    .x-item__specs {
+      color: $text-main;
+    }
+
+    .x-item__qty {
+      width: 54px;
+      line-height: 26px;
+      text-align: center;
+      padding-left: 12px;
+      border: 1px solid $grey-e1;
+      outline: none;
+    }
+  }
+
+  &__header > li {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.015em;
+  }
+
+  .buttons {
+    display: flex;
+    padding-top: 44px;
+    justify-content: space-between;
+  }
+
+  .btn {
+    text-transform: uppercase;
+    padding: 20px 38px;
+  }
+}
+
+.order-data {
+  padding-bottom: 80px;
+
+  .btn {
+    width: unset;
+    padding: 12px 18px;
+    margin: 2px auto 0 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__group {
+    flex: 0 0 32%;
+    display: flex;
+    flex-direction: column;
+
+    &_checkout {
+      text-align: right;
+      text-transform: uppercase;
+      background-color: #f5f3f3;
+      padding: 40px;
+
+      hr {
+        height: 1px;
+        color: #666;
+        margin: 0 0 17px 0;
+      }
+
+      .btn {
+        width: 100%;
+        text-transform: uppercase;
+        //padding-top: 17px;
+      }
+    }
+  }
+
+  &__heading,
+  &__total {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $text-main;
+    padding-bottom: 22px;
+  }
+
+  &__text {
+    padding-bottom: 24px;
+  }
+
+  &__subtotal {
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 400;
+    padding-bottom: 14px;
+    color: #4a4a4a;
+  }
+
+  &__input {
+    width: 100%;
+    line-height: 42px;
+    padding-left: 18px;
+    margin-bottom: 20px;
+    border: 1px solid #eaeaea;
+    outline: none;
+
+    &::placeholder {
+      color: $grey-b1;
+    }
+  }
+}
+
+@import "footer";
