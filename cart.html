@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
           name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Index</title>
+    <title>Cart</title>
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
@@ -13,10 +14,10 @@
     <!-- Font Awesome -->
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/8bcfed9d71.js"></script>
     <!-- Bootstrap -->
-    <!--    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"-->
-    <!--          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" rel="stylesheet">-->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="css/cart.css" rel="stylesheet">
 </head>
 
 <body>
@@ -267,183 +268,147 @@
         </ol>
     </div>
 </nav>
-<main class="brand">
+<nav class="location">
     <div class="x-container">
-        <div class="brand-demo">
-            <div class="brand-header">
-                <a class="brand-link" href="#">
-                    <div class="brand-title">
-                        <p class="title">THE BRAND</p>
-                        <p class="subtitle">OF LUXURIOUS <span class="subtitle-hl">FASHION</span></p>
-                    </div>
-                </a>
+        <div class="location__box">
+            <h2 class="page">
+                New Arrivals
+            </h2>
+            <nav aria-label="location-breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">home</a></li>
+                    <li class="breadcrumb-item"><a href="./catalog.html">women</a></li>
+                    <li aria-current="page" class="breadcrumb-item active">new arrivals</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</nav>
+<main class="cart-list">
+    <div class="x-container">
+        <div class="cart-list__box">
+            <ul class="cart-list__header">
+                <li class="prod-details">PRODUCT DETAILS</li>
+                <li class="price">UNITE PRICE</li>
+                <li class="quantity">QUANTITY</li>
+                <li class="shipping">SHIPPING</li>
+                <li class="subtotal">SUBTOTAL</li>
+                <li class="action">ACTION</li>
+            </ul>
+            <ul class="cart-list__item">
+                <li class="prod-details">
+                    <a class="x-item__desc-link" href="./product.html#">
+                        <img alt="" src="./img/cart/cart_1.jpg">
+                        <p class="x-item__desc">Mango People T-shirt</p>
+                        <p class="x-item__specs">
+                            Color:&ensp;<i class="lighten">Red</i><br>
+                            Size:&ensp;<i class="lighten">XXL</i>
+                        </p>
+                    </a>
+                </li>
+                <li class="price">$150</li>
+                <li class="quantity">
+                    <label>
+                        <input class="x-item__qty" max="100" min="1" pattern="\d*" placeholder="2" required
+                               type="number">
+                    </label>
+                </li>
+                <li class="shipping">FREE</li>
+                <li class="subtotal">$300</li>
+                <li class="action">
+                    <a class="x-btn-close" href="#"><img alt="" class="x-btn-close__img"
+                                                         src="./img/icon/cart-close-red.png"></a>
+                </li>
+            </ul>
+            <ul class="cart-list__item x-item">
+                <li class="prod-details">
+                    <a class="x-item__desc-link" href="./product.html#">
+                        <img alt="" src="./img/cart/cart_2.jpg">
+                        <p class="x-item__desc">Mango People T-shirt</p>
+                        <p class="x-item__specs">
+                            Color:&ensp;<i class="lighten">Red</i><br>
+                            Size:&ensp;<i class="lighten">XXL</i>
+                        </p>
+                    </a>
+                </li>
+                <li class="price">$150</li>
+                <li class="quantity">
+                    <label>
+                        <input class="x-item__qty" max="100" min="1" pattern="\d*" placeholder="2" required
+                               type="number">
+                    </label>
+                </li>
+                <li class="shipping">FREE</li>
+                <li class="subtotal">$300</li>
+                <li class="action">
+                    <a class="x-btn-close" href="#"><img alt="" class="x-btn-close__img"
+                                                         src="./img/icon/cart-close-red.png"></a>
+                </li>
+            </ul>
+            <ul class="cart-list__item">
+                <li class="prod-details">
+                    <a class="x-item__desc-link" href="./product.html#">
+                        <img alt="" src="./img/cart/cart_3.jpg">
+                        <p class="x-item__desc">Mango People T-shirt</p>
+                        <p class="x-item__specs">
+                            Color:&ensp;<i class="lighten">Red</i><br>
+                            Size:&ensp;<i class="lighten">XXL</i>
+                        </p>
+                    </a>
+                </li>
+                <li class="price">$150</li>
+                <li class="quantity">
+                    <label>
+                        <input class="x-item__qty" max="100" min="1" pattern="\d*" placeholder="2" required
+                               type="number">
+                    </label>
+                </li>
+                <li class="shipping">FREE</li>
+                <li class="subtotal">$300</li>
+                <li class="action">
+                    <a class="x-btn-close" href="#"><img alt="" class="x-btn-close__img"
+                                                         src="./img/icon/cart-close-red.png"></a>
+                </li>
+            </ul>
+            <div class="buttons">
+                <button class="btn btn-grey">CLEAR SHOPPING CART</button>
+                <button class="btn btn-grey">CONTINUE SHOPPING</button>
             </div>
         </div>
     </div>
 </main>
-<section class="trends">
+<section class="order-data">
     <div class="x-container">
-        <div class="trends-section">
-            <a class="trends-item card-1" href="#">
-                <article class="card-label">
-                    <p class="card-label__offer">hot deal</p>
-                    <p class="card-label__title">for men</p>
-                </article>
-            </a>
-            <a class="trends-item card-2" href="#">
-                <article class="card-label">
-                    <p class="card-label__offer">30% offer</p>
-                    <p class="card-label__title">women</p>
-                </article>
-            </a>
-            <a class="trends-item card-3" href="#">
-                <article class="card-label">
-                    <p class="card-label__offer">luxurious & trendy</p>
-                    <p class="card-label__title">accessories</p>
-                </article>
-            </a>
-            <a class="trends-item card-4" href="#">
-                <article class="card-label">
-                    <p class="card-label__offer">new arrivals</p>
-                    <p class="card-label__title">for kids</p>
-                </article>
-            </a>
-        </div>
-    </div>
-</section>
-<section class="featured">
-    <div class="x-container">
-        <header class="featured-header">
-            <h2 class="title">Featured Items</h2>
-            <p class="subtitle">Shop for items based on what we featured in this week</p>
-        </header>
-        <div class="card-box">
-            <article class="card card-1">
-                <a class="x-item" href="#">
-                    <div class="x-item-image">
-                        <img alt="item-1" src="img/catalog/image_10.png">
-                    </div>
-                    <div class="x-item-desc">
-                        <p class="x-text">Mango People T-shirt</p>
-                        <p class="x-price">$52.00</p>
-                    </div>
-                </a>
-                <a class="x-add" href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp; Add to Cart</a>
-            </article>
-            <article class="card card-2">
-                <a class="x-item" href="#">
-                    <div class="x-item-image">
-                        <img alt="item-2" src="img/catalog/image_11.png">
-                    </div>
-                    <div class="x-item-desc">
-                        <p class="x-text">Mango People T-shirt</p>
-                        <p class="x-price">$52.00</p>
-                    </div>
-                </a>
-                <a class="x-add" href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp; Add to Cart</a>
-            </article>
-            <article class="card card-3">
-                <a class="x-item" href="#">
-                    <div class="x-item-image">
-                        <img alt="item-3" src="img/catalog/image_3.png">
-                    </div>
-                    <div class="x-item-desc">
-                        <p class="x-text">Mango People T-shirt</p>
-                        <p class="x-price">$52.00</p>
-                    </div>
-                </a>
-                <a class="x-add" href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp; Add to Cart</a>
-            </article>
-            <article class="card card-4">
-                <a class="x-item" href="#">
-                    <div class="x-item-image">
-                        <img alt="item-4" src="img/catalog/image_13.png">
-                    </div>
-                    <div class="x-item-desc">
-                        <p class="x-text">Mango People T-shirt</p>
-                        <p class="x-price">$52.00</p>
-                    </div>
-                </a>
-                <a class="x-add" href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp; Add to Cart</a>
-            </article>
-            <article class="card card-5">
-                <a class="x-item" href="#">
-                    <div class="x-item-image">
-                        <img alt="item-5" src="img/catalog/image_14.png">
-                    </div>
-                    <div class="x-item-desc">
-                        <p class="x-text">Mango People T-shirt</p>
-                        <p class="x-price">$52.00</p>
-                    </div>
-                </a>
-                <a class="x-add" href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp; Add to Cart</a>
-            </article>
-            <article class="card card-6">
-                <a class="x-item" href="#">
-                    <div class="x-item-image">
-                        <img alt="item-6" src="img/catalog/image_7.png">
-                    </div>
-                    <div class="x-item-desc">
-                        <p class="x-text">Mango People T-shirt</p>
-                        <p class="x-price">$52.00</p>
-                    </div>
-                </a>
-                <a class="x-add" href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp; Add to Cart</a>
-            </article>
-            <article class="card card-7">
-                <a class="x-item" href="#">
-                    <div class="x-item-image">
-                        <img alt="item-7" src="img/catalog/image_12.png">
-                    </div>
-                    <div class="x-item-desc">
-                        <p class="x-text">Mango People T-shirt</p>
-                        <p class="x-price">$52.00</p>
-                    </div>
-                </a>
-                <a class="x-add" href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp; Add to Cart</a>
-            </article>
-            <article class="card card-8">
-                <a class="x-item" href="#">
-                    <div class="x-item-image">
-                        <img alt="item-8" src="img/catalog/image_5.png">
-                    </div>
-                    <div class="x-item-desc">
-                        <p class="x-text">Mango People T-shirt</p>
-                        <p class="x-price">$52.00</p>
-                    </div>
-                </a>
-                <a class="x-add" href="#"><i class="fa-solid fa-cart-shopping"></i>&nbsp;&nbsp; Add to Cart</a>
-            </article>
-        </div>
-        <a class="btn-inv" href="#">Browse All Products&ensp;<i class="fa-solid fa-arrow-right-long"></i></a>
-    </div>
-</section>
-<section class="banner">
-    <div class="x-container">
-        <div class="banner-box">
-            <a class="special-offer" href="#">
-                <div class="special-offer__title">
-                    <h2 class="title">30% <span class="highlighted">OFFER</span></h2>
-                    <p>FOR WOMEN</p>
-                </div>
-            </a>
-            <div class="strengths">
-                <ul>
-                    <li class="strengths-item delivery"><span class="details-header">Free Delivery</span>
-                        Worldwide delivery on all. Authoritatively morph next-generation innovation with extensive
-                        models.
-                    </li>
-                    <li class="strengths-item sales"><span class="details-header">Sales &amp;&nbsp;discounts</span>
-                        Worldwide delivery on all. Authoritatively morph next-generation innovation with extensive
-                        models.
-                    </li>
-                    <li class="strengths-item quality"><span class="details-header">Quality assurance</span>
-                        Worldwide delivery on all. Authoritatively morph next-generation innovation with extensive
-                        models.
-                    </li>
-                </ul>
+        <form class="order-data__box">
+            <div class="order-data__group">
+                <p class="order-data__heading">Shipping Adress</p>
+                <label>
+                    <input class="order-data__input" placeholder="City" type="text">
+                </label>
+                <label>
+                    <input class="order-data__input" placeholder="State" type="text">
+                </label>
+                <label>
+                    <input class="order-data__input" placeholder="Postcode / Zip" type="text">
+                </label>
+                <button class="btn btn-grey">Get a Quote</button>
             </div>
-        </div>
+            <div class="order-data__group">
+                <p class="order-data__heading">Coupon discount</p>
+                <p class="order-data__text">Enter your coupon code if you have one</p>
+                <label>
+                    <input class="order-data__input" placeholder="Coupon code">
+                </label>
+                <button class="btn btn-grey">Apply coupon</button>
+            </div>
+            <div class="order-data__group">
+                <div class="order-data__group_checkout"><p class="order-data__subtotal">Sub total&emsp;&emsp;$900</p>
+                    <p class="order-data__total">GRAND TOTAL&emsp;&emsp;<i class="highlighted">$900</i></p>
+                    <hr>
+                    <button class="btn btn-inv">Proceed to checkout</button>
+                </div>
+            </div>
+        </form>
     </div>
 </section>
 <section class="subscribe">
@@ -486,12 +451,12 @@
             </a>
             <article class="brand-about__text">Objectively transition extensive data rather than cross-functional
                 solutions.
-                Monotonectally syndicate
-                multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of
+                Monotonically syndicate
+                multidisciplinary materials before go forward benefits. Intrinsic syndicate an expanded array of
                 processes
                 and cross-unit partnerships.<br>
                 <br>
-                Efficiently plagiarize 24/365 action items and focused infomediaries.
+                Efficiently plagiarize 24/365 action items and focused intermediaries.
                 Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
             </article>
         </div>
