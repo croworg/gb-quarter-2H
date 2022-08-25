@@ -220,14 +220,16 @@
         .cart-item {
           display: flex;
           align-items: start;
-          column-gap: 14px;
-          margin: 17px 0;
-          padding-bottom: 17px;
+          //column-gap: 14px;
+          //margin: 17px 0;
+          //padding-bottom: 17px;
           border-bottom: 1px solid $grey-e1;
 
           &__icon {
-            width: 72px;
-            height: 85px;
+            //width: 72px;
+            //height: 85px;
+            float: left;
+            margin-right: 14px;
           }
 
           &__desc {
@@ -267,6 +269,10 @@
           }
         }
 
+        .card-link {
+          padding: 17px 0;
+        }
+
         .total {
           display: flex;
           justify-content: space-between;
@@ -274,25 +280,26 @@
           line-height: 1.2;
           font-weight: 700;
           text-transform: uppercase;
-          color: #222222;
+          color: $text-main;
+          padding-top: 17px;
         }
 
         .cart-btn {
-          display: block;
-          width: 100%;
+          //display: block;
+          //width: 100%;
           font-size: 14px;
           line-height: 1.2;
           font-weight: 700;
           text-transform: uppercase;
-          text-align: center;
+          //text-align: center;
           padding: 19px;
-          color: #4f4f4f;
-          border: 1px solid $grey-e1;
+          //color: #4f4f4f;
+          //border: 1px solid $grey-e1;
           margin-top: 20px;
 
           &:hover {
-            border: 1px solid $highlighted-text;
-            color: $highlighted-text;
+            //border: 1px solid $highlighted-text;
+            //color: $highlighted-text;
           }
         }
 
@@ -396,7 +403,6 @@
     width: max-content;
     display: flex;
     list-style: none;
-    //gap: 30px;
     margin: 0 auto;
     z-index: 10;
 
@@ -406,8 +412,6 @@
       font-size: 14px;
       line-height: 26px;
       font-weight: 700;
-      //color: $text-main;
-      padding: 13px 20px;
 
       &:hover .mega-box {
         display: flex;
@@ -415,55 +419,53 @@
 
       .mega-link {
         font-size: 14px;
-        line-height: 26px;
-        font-weight: 700;
-        //text-transform: uppercase;
+      }
 
-        &:hover {
-          color: $highlighted-text;
-        }
+      .mega-link_root {
+        display: block;
+        padding: 11px 20px;
       }
 
       .mega-box {
         display: none;
-        background-color: white;
-        border: 1px solid #e8e8e8;
-        border-radius: 5px;
-        padding: 25px;
         position: absolute;
         top: 43px;
         gap: 43px;
         left: 0;
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid $grey-e9;
+        padding: 25px;
+        z-index: 5;
 
-        &:before {
-          content: "";
+        &::after {
           display: block;
+          position: absolute;
+          content: "";
           width: 10px;
           height: 10px;
-          position: absolute;
-          background-color: white;
           top: -6px;
           left: 35px;
+          background-color: white;
+          border-width: 1px 0 0 1px;
+          border-style: solid;
+          border-color: $grey-e9;
           transform: rotate(45deg);
-          border-top: 1px solid #e8e8e8;
-          border-left: 1px solid #e8e8e8;
         }
 
         .mega-heading {
           width: 200px;
-          font-size: 14px;
           font-weight: 600;
           letter-spacing: 0.025em;
+          text-transform: uppercase;
+          border-bottom: 1px solid $grey-e9;
           padding-bottom: 8px;
           margin-bottom: 16px;
-          text-transform: uppercase;
-          border-bottom: 1px solid #e8e8e8;
         }
 
         .mega-link {
           display: block;
           font-weight: 400;
-          font-size: 14px;
           line-height: 28px;
           letter-spacing: 0.025em;
           color: #4f4f4f;
@@ -474,14 +476,18 @@
         }
       }
 
-      &.last:hover .mega-box {
+      &_last:hover .mega-box {
         right: 0;
         left: auto;
       }
 
-      &.last:hover .mega-box:before {
+      &_last:hover .mega-box::after {
         right: 35px;
         left: auto;
+      }
+
+      &_active {
+        border-bottom: 3px solid $highlighted-text;
       }
     }
   }
