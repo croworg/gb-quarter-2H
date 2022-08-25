@@ -50,7 +50,7 @@ a {
 }
 
 i {
-  font-style: unset;
+  font-style: inherit;
 }
 
 .link {
@@ -62,6 +62,10 @@ i {
 ul li,
 ol li {
   list-style: none;
+}
+
+.fw900 {
+  font-weight: 900;
 }
 
 .highlighted {
@@ -181,7 +185,6 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   text-align: center;
   border-radius: 0;
   transition: all .2s ease-in-out;
-
 }
 
 .btn {
@@ -203,6 +206,12 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   line-height: 1.2;
   font-weight: 700;
   color: #4a4a4a;
+
+  &:hover {
+    color: $highlighted-text;
+    background: $white;
+    border: 1px solid $highlighted-text;
+  }
 }
 
 .btn-inv {
@@ -384,19 +393,27 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   }
 }
 
+.card-link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+
+  &:hover {
+    color: $text-main;
+  }
+}
+
 .x-btn-close {
   align-self: center;
   filter: grayscale(1) brightness(2);
   transition: filter 0.2s ease-in-out;
   padding: 10px 5px;
-  animation: 1s;
 
   &:hover {
     filter: grayscale(0);
 
     & > img {
-      transform: scale(1.5) rotate(90deg);
-
+      transform: scale(1.3);
     }
   }
 

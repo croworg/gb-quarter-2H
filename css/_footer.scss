@@ -1,107 +1,5 @@
 // Footer styles
 
-.banner {
-
-  &-box {
-    display: flex;
-    width: 100%;
-    margin-bottom: 97px;
-    background-color: $text-main;
-
-    .special-offer {
-      display: block;
-      position: relative;
-      width: 767px;
-      height: 529px;
-      flex: 0 0 767px;
-      background-image: url("../img/special-offer.png");
-
-      &::before {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 100%;
-        background-image: url("../img/fade-layer.png");
-      }
-
-      &__title {
-        position: relative;
-        font-size: 32.2px;
-        font-weight: 700;
-        letter-spacing: 0.025em;
-        color: white;
-        padding-top: 146px;
-        padding-left: 39px;
-
-        .offer {
-          font-size: 53.7px;
-        }
-      }
-    }
-
-    .strengths {
-      flex: 0 1 50%;
-      padding: 48px 35px 0 36px;
-      color: #fbfbfb;
-
-      ul,
-      li {
-        list-style: none;
-      }
-
-      &-item {
-        position: relative;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 24px;
-        letter-spacing: 0.025em;
-        margin-left: 75px;
-        margin-bottom: 50px;
-        color: #fbfbfb;
-        word-break: break-all;
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        &:before {
-          position: absolute;
-          width: 45px;
-          left: -75px;
-          text-align: center;
-        }
-      }
-
-      .details-header {
-        display: block;
-        font-size: 20px;
-        line-height: 33px;
-        margin-bottom: 5px;
-        font-weight: 700;
-        letter-spacing: 0.025em;
-      }
-
-      .delivery {
-        &:before {
-          content: url("../img/icon/delivery.png");
-        }
-      }
-
-      .sales {
-        &:before {
-          content: url("../img/icon/sale.png");
-        }
-      }
-
-      .quality {
-        &:before {
-          content: url("../img/icon/crown.png");
-        }
-      }
-    }
-  }
-}
-
 .subscribe {
   height: 438px;
   background-image: linear-gradient(rgba(242, 242, 242, 0.5), rgba(242, 242, 242, 0.5)), url("../img/subscribe_bg.png");
@@ -229,7 +127,7 @@
   .brand-about {
     margin-top: 109px;
     width: 448px;
-    margin-right: 20px;
+    margin-right: 63px;
 
     &__logo {
       width: 59px;
@@ -244,10 +142,6 @@
       letter-spacing: 0.025em;
       color: #3e3e40;
       margin-left: 13px;
-
-      .marked-text {
-        font-weight: 900;
-      }
     }
 
     &__text {
@@ -264,30 +158,35 @@
     flex: 1 0 50%;
     display: flex;
     justify-content: space-between;
-    // gap: 30px;
     margin-top: 123px;
-    padding: 0 43px;
 
     .nav-box {
-      a {
-        flex: 0 0 155px;
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: 0.025em;
-        color: $grey-89;
-        line-height: 42px;
-      }
+      flex: 1 0 30%;
 
-      .header a {
-        font-weight: 700;
+      .header {
         font-size: 18px;
+        font-weight: 700;
         line-height: 26px;
         text-transform: uppercase;
         letter-spacing: 0.025em;
         color: $highlighted-text;
         margin-bottom: 20px;
+        pointer-events: none;
       }
 
+      .link {
+        display: block;
+        flex: 1 0 150px;
+        font-size: 16px;
+        line-height: 42px;
+        letter-spacing: 0.025em;
+        color: $grey-89;
+        transition: color .2s ease-in-out;
+
+        &:hover {
+          color: $highlighted-text;
+        }
+      }
     }
   }
 
@@ -323,6 +222,7 @@
         color: #b2b2b2;
         text-align: center;
         vertical-align: middle;
+        transition: all .2s ease-in-out;
 
         &:hover {
           background-color: $highlighted-text;
