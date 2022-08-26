@@ -28,7 +28,7 @@
     color: white;
 
     &:hover {
-      background-color: $highlighted-text;
+      background-color: $highlighted;
     }
   }
 
@@ -43,7 +43,7 @@
     color: white;
 
     &:hover {
-      background-color: $highlighted-text;
+      background-color: $highlighted;
     }
   }
 }
@@ -73,7 +73,7 @@
         max-width: max-content;
         margin: 0 auto 14px;
         line-height: 1;
-        color: $highlighted-text;
+        color: $highlighted;
       }
 
       &__underline {
@@ -91,7 +91,7 @@
           left: 30%;
           top: 1px;
           max-width: 40%;
-          background-color: $highlighted-text;
+          background-color: $highlighted;
         }
       }
     }
@@ -128,7 +128,7 @@
       font-size: 24px;
       line-height: 24px;
       font-weight: 700;
-      color: $highlighted-text;
+      color: $highlighted;
       padding-bottom: 43px;
       margin-top: 37px;
       border-bottom: 1px solid $grey-e1;
@@ -180,12 +180,12 @@
           -moz-appearance: none;
 
           &:focus {
-            border-color: $highlighted-text;
+            border-color: $highlighted;
             box-shadow: none;
           }
 
           option:checked {
-            color: $highlighted-text;
+            color: $highlighted;
           }
 
           option:hover {

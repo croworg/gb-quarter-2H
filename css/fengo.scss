@@ -1,0 +1,63 @@
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+
+  &:hover {
+    //color: $highlighted;
+  }
+}
+
+i {
+  font-style: inherit;
+}
+
+.link {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+
+/* Page styles */
+
+.f-container {
+  width: 1200px;
+  height: inherit;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-menu {
+  height: 27px;
+  background-color: #f6f6f6;
+  font-size: 11px;
+  line-height: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #7e7e7e;
+
+  &__box {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -19,11 +19,11 @@
 
       .brand-link {
         &:hover {
-          color: $text-main;
+          color: $main-text;
         }
 
         > .brand-title {
-          border-left: 12px solid $highlighted-text;
+          border-left: 12px solid $highlighted;
           padding-left: 12px;
         }
       }
@@ -44,7 +44,7 @@
         line-height: 32px;
 
         &-hl {
-          color: $highlighted-text;
+          color: $highlighted;
         }
       }
     }
@@ -94,12 +94,12 @@
 
   .trend__name {
     font-size: 18px;
-    color: $text-main;
+    color: $main-text;
   }
 
   .trend__category {
     font-size: 30px;
-    color: $highlighted-text;
+    color: $highlighted;
   }
 }
 
@@ -136,7 +136,7 @@
     display: flex;
     width: 100%;
     margin-bottom: 97px;
-    background-color: $text-main;
+    background-color: $main-text;
 
     .special-offer {
       display: block;
