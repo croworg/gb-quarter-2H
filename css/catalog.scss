@@ -85,6 +85,10 @@
     margin-bottom: 18px;
   }
 
+  &__trend-link {
+    color: #6f6e6e;
+  }
+
   &__sort {
     font-size: 14px;
     display: flex;
@@ -142,10 +146,22 @@
 
   .page-link {
     color: $grey-83;
+    border: none;
 
     &:hover {
       color: $highlighted;
+      background-color: unset;
     }
+  }
+
+  .page-item.active > .page-link {
+    color: $highlighted;
+    background-color: unset;
+  }
+
+
+  .pagination {
+    border: 1px solid $grey-e1;
   }
 }
 

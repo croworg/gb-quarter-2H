@@ -75,7 +75,7 @@
           &__list:after {
             font-family: "FontAwesome";
             font-weight: 900;
-            content: "\f0da";
+            content: "\f0d7";
             color: $grey-83;
             display: inline-block; /* Enable widths */
             width: 1em; /* Set width across all characters */
@@ -89,7 +89,7 @@
           &[open] .search-select__list:after {
             font-family: "FontAwesome";
             font-weight: 900;
-            content: "\f0d7";
+            content: "\f0d8";
             color: $grey-83;
             display: inline-block; /* Enable widths */
             width: 1em; /* Set width across all characters */
@@ -159,7 +159,7 @@
           letter-spacing: 0.025em;
           color: #a4a4a4;
           margin-left: -4px;
-          padding-left: 20px;
+          padding: 0 20px 0;
         }
 
         button {
