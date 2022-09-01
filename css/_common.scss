@@ -1,9 +1,10 @@
 // Vars and common section
 
-$text-main: #222222;
+$main-text: #222222;
 $title-bg: #f1e4e6;
 $inverted-text: rgba(255, 255, 255, 1);
-$highlighted-text: rgba(241, 109, 127, 1);
+$highlighted: rgba(241, 109, 127, 1);
+$warning: #ff0d0d;
 $card-fade: rgba(58, 56, 56, 0.83);
 $white: #ffffff;
 $white-fb: #fbfbfb;
@@ -16,19 +17,55 @@ $grey-f7: #f7f7f7;
 $dark-grey: #3e3e40;
 $location-bg: #f8f3f4;
 
+@keyframes vibrate-3 {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  30% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, -2px);
+  }
+  70% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  90% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 
 // ------ General styles ------
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Lato', sans-serif;
   line-height: 1.2;
-  color: $text-main;
+  color: $main-text;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -42,10 +79,10 @@ h2 {
 
 a {
   text-decoration: none;
-  color: $text-main;
+  color: $main-text;
 
   &:hover {
-    color: $highlighted-text;
+    color: $highlighted;
   }
 }
 
@@ -69,7 +106,11 @@ ol li {
 }
 
 .highlighted {
-  color: $highlighted-text;
+  color: $highlighted;
+}
+
+.warning {
+  color: $warning;
 }
 
 .avatar-cropper {
@@ -94,7 +135,7 @@ input[type=range] {
 }
 
 input[type=range]:focus {
-  outline: none;
+  //outline: none;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -103,27 +144,27 @@ input[type=range]::-webkit-slider-runnable-track {
   cursor: pointer;
   //animate: 0.2s;
   box-shadow: 0 0 0 #000000;
-  background: $highlighted-text;
+  background: $highlighted;
   border-radius: 1px;
   border: 0 solid #000000;
 }
 
 input[type=range]::-webkit-slider-thumb {
   box-shadow: 0 0 0 #000000;
-  border: 1px solid $highlighted-text;
+  border: 1px solid $highlighted;
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background: $highlighted-text;
+  background: $highlighted;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -5px;
-  outline: none;
-  color: $highlighted-text;
+  //outline: none;
+  color: $highlighted;
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: $highlighted-text;
+  background: $highlighted;
 }
 
 
@@ -143,7 +184,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 .marked-text {
-  color: $highlighted-text
+  color: $highlighted
 }
 
 .flex-box {
@@ -194,14 +235,15 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 .btn {
   @extend .btn-default;
-  color: $highlighted-text;
-  border: 1px solid $highlighted-text;
+  color: $highlighted;
+  border: 1px solid $highlighted;
   background-color: $white;
 
   &:hover {
     color: $white;
-    background: $highlighted-text;
-    border: 1px solid $highlighted-text;
+    background: $highlighted;
+    border: 1px solid $highlighted;
+    animation: vibrate-3 0.5s linear 2s infinite both;
   }
 }
 
@@ -213,22 +255,22 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   color: #4a4a4a;
 
   &:hover {
-    color: $highlighted-text;
+    color: $highlighted;
     background: $white;
-    border: 1px solid $highlighted-text;
+    border: 1px solid $highlighted;
   }
 }
 
 .btn-inv {
   @extend .btn-default;
   color: $white;
-  border: 1px solid $highlighted-text;
-  background-color: $highlighted-text;
+  border: 1px solid $highlighted;
+  background-color: $highlighted;
 
   &:hover {
-    color: $highlighted-text;
+    color: $highlighted;
     background-color: $white;
-    border: 1px solid $highlighted-text;
+    border: 1px solid $highlighted;
   }
 }
 
@@ -236,7 +278,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   position: relative;
 
   &[open] {
-    color: $highlighted-text;
+    color: $highlighted;
   }
 
   &__arrow {
@@ -261,9 +303,8 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     letter-spacing: 0.025em;
     list-style-type: none;
     padding: 0 2rem 1rem 0;
-    border-left: 5px solid $highlighted-text;
+    border-left: 5px solid $highlighted;
     border-bottom: 1px solid $grey-e9;
-    outline: none;
   }
 
   &__list {
@@ -317,7 +358,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
           line-height: 1.2;
           font-weight: 400;
           text-transform: uppercase;
-          color: $text-main;
+          color: $main-text;
         }
 
         .x-price {
@@ -325,7 +366,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
           line-height: 1.2;
           font-weight: 700;
           text-transform: uppercase;
-          color: $highlighted-text;
+          color: $highlighted;
           margin-top: 10px;
         }
       }
@@ -379,7 +420,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
       &:hover {
         background-color: #fff;
-        color: $text-main;
+        color: $main-text;
 
         img {
           filter: invert(0);
@@ -404,11 +445,12 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   height: 100%;
 
   &:hover {
-    color: $text-main;
+    color: $main-text;
   }
 }
 
 .x-btn-close {
+  display: block;
   align-self: center;
   filter: grayscale(1) brightness(2);
   transition: filter 0.2s ease-in-out;

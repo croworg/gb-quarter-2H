@@ -1,0 +1,102 @@
+// Checkout page styles
+
+@import "common";
+@import "header";
+
+.checkout {
+  &__box {
+    margin: 47px 0 93px;
+  }
+
+  &__item {
+    font-size: 13px;
+    line-height: 1.2;
+    color: $main-text;
+
+    & > summary {
+      list-style: none;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 32px 0;
+      border-bottom: 1px solid $grey-e9;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+    }
+
+    label {
+      font-size: 12px;
+    }
+  }
+
+  &__item[open] > summary {
+    border: none;
+  }
+
+  &__item-box {
+    padding-bottom: 80px;
+    border-bottom: 1px solid $grey-e9;
+  }
+
+  .co-address {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left, .right {
+    flex: 1 0 45%;
+  }
+
+  .left {
+    padding-left: 34px;
+  }
+
+  [type="radio"] {
+    height: 12px;
+  }
+
+  .login-input {
+    display: block;
+    max-width: 390px;
+    width: 100%;
+    line-height: 45px;
+    padding: 0 12px;
+    border: 1px solid #eaeaea;
+  }
+
+  .label {
+    margin: 10px 0;
+  }
+
+  .right > label {
+    margin-top: 15px;
+  }
+
+  p.warning {
+    margin: 10px 0;
+  }
+
+  .annotation {
+    line-height: 20px;
+    color: #b3b2b2;
+  }
+
+  .btn {
+    display: inline-block;
+    width: 180px;
+    padding: 19px 0;
+    margin: 30px 15px 0 0;
+  }
+
+  .forgot-link {
+    margin-top: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: color .2s ease-in-out;
+  }
+}
+
+@import "footer";

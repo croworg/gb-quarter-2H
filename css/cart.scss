@@ -20,7 +20,7 @@
 
   &__header {
     padding: 20px 0;
-    color: $text-main;
+    color: $main-text;
   }
 
   &__item {
@@ -80,11 +80,11 @@
     .x-item__desc {
       height: 3em;
       text-transform: uppercase;
-      color: $text-main;
+      color: $main-text;
     }
 
     .x-item__specs {
-      color: $text-main;
+      color: $main-text;
     }
 
     .x-item__qty {
@@ -164,7 +164,7 @@
     line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
-    color: $text-main;
+    color: $main-text;
     padding-bottom: 22px;
   }
 
@@ -183,7 +183,7 @@
   &__input {
     width: 100%;
     line-height: 42px;
-    padding-left: 18px;
+    padding: 0 18px 0;
     margin-bottom: 20px;
     border: 1px solid #eaeaea;
     outline: none;
