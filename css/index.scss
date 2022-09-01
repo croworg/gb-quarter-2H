@@ -63,6 +63,12 @@
 
   .trend__item {
     position: relative;
+
+    &:hover .trend__img {
+      display: block;
+      opacity: 0.25;
+      transition: opacity .3s ease-in-out;
+    }
   }
 
   .trend__img {
@@ -73,19 +79,13 @@
   .trend__link {
     display: block;
     background-color: rgb(58, 56, 56);
-
-    &:hover .trend__img {
-      display: block;
-      opacity: 0.25;
-      transition: opacity .3s ease-in-out;
-    }
   }
 
   .trend__badge {
     position: absolute;
     top: 0;
-    left: 0;
-    transform: translate(-1px, 26px); /* -1px чтобы убрать странный эффект рамки при трансформе */
+    left: -1px; /* -1px чтобы убрать странный эффект рамки при трансформе */
+    transform: translateY(26px);
     font-weight: 900;
     letter-spacing: 0.025em;
     padding: 20px 16px;

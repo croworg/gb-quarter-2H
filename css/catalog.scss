@@ -152,6 +152,14 @@
       color: $highlighted;
       background-color: unset;
     }
+
+    &:focus {
+      z-index: unset;
+      color: unset;
+      background-color: unset;
+      box-shadow: unset;
+      outline: 0;
+    }
   }
 
   .page-item.active > .page-link {

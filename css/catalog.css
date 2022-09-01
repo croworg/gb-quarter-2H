@@ -224,7 +224,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 .btn-inv:hover {
   color: rgb(241, 109, 127);
-  background-color: #ffffff;
+  background-color: #fef4f5;
   border: 1px solid rgb(241, 109, 127);
 }
 
@@ -243,6 +243,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 .x-dropdown::after {
   content: "\f0d7";
+  color: #6f6e6e;
 }
 .x-dropdown[open]::after {
   content: "\f0d8";
@@ -952,6 +953,13 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .catalog .page-link:hover {
   color: rgb(241, 109, 127);
   background-color: unset;
+}
+.catalog .page-link:focus {
+  z-index: unset;
+  color: unset;
+  background-color: unset;
+  box-shadow: unset;
+  outline: 0;
 }
 .catalog .page-item.active > .page-link {
   color: rgb(241, 109, 127);

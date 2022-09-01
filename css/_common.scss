@@ -191,7 +191,6 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   display: flex;
 }
 
-
 .logo {
   display: flex;
   align-items: center;
@@ -269,7 +268,9 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
   &:hover {
     color: $highlighted;
-    background-color: $white;
+    //color: $white;
+    background-color: lighten($highlighted, 29%);
+    //background-color: $white;
     border: 1px solid $highlighted;
   }
 }
@@ -292,6 +293,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   &::after {
     @extend .x-dropdown__arrow;
     content: '\f0d7';
+    color: #6f6e6e;
   }
 
   &[open]::after {

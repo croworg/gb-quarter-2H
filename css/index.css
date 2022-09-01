@@ -225,7 +225,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 .btn-inv:hover {
   color: rgb(241, 109, 127);
-  background-color: #ffffff;
+  background-color: #fef4f5;
   border: 1px solid rgb(241, 109, 127);
 }
 
@@ -244,6 +244,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 .x-dropdown::after {
   content: "\f0d7";
+  color: #6f6e6e;
 }
 .x-dropdown[open]::after {
   content: "\f0d8";
@@ -882,6 +883,11 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .trends .trend__item {
   position: relative;
 }
+.trends .trend__item:hover .trend__img {
+  display: block;
+  opacity: 0.25;
+  transition: opacity 0.3s ease-in-out;
+}
 .trends .trend__img {
   display: block;
   transition: opacity 0.2s ease-in-out;
@@ -890,16 +896,11 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   display: block;
   background-color: rgb(58, 56, 56);
 }
-.trends .trend__link:hover .trend__img {
-  display: block;
-  opacity: 0.25;
-  transition: opacity 0.3s ease-in-out;
-}
 .trends .trend__badge {
   position: absolute;
   top: 0;
-  left: 0;
-  transform: translate(-1px, 26px); /* -1px чтобы убрать странный эффект рамки при трансформе */
+  left: -1px; /* -1px чтобы убрать странный эффект рамки при трансформе */
+  transform: translateY(26px);
   font-weight: 900;
   letter-spacing: 0.025em;
   padding: 20px 16px;

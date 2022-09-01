@@ -1,14 +1,49 @@
+@keyframes vibrate-3 {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  30% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  50% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, -2px);
+  }
+  70% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  90% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.2;
+  color: #222222;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  line-height: 1.2;
-  color: #222222;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -49,6 +84,10 @@ ol li {
 
 .highlighted {
   color: rgb(241, 109, 127);
+}
+
+.warning {
+  color: #ff0d0d;
 }
 
 .avatar-cropper {
@@ -162,6 +201,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   color: #ffffff;
   background: rgb(241, 109, 127);
   border: 1px solid rgb(241, 109, 127);
+  animation: vibrate-3 0.5s linear 2s infinite both;
 }
 
 .btn-grey {
@@ -336,6 +376,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 .x-btn-close {
+  display: block;
   align-self: center;
   filter: grayscale(1) brightness(2);
   transition: filter 0.2s ease-in-out;
@@ -416,7 +457,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .top-bar .flex-box .center .search .search-select__list:after {
   font-family: "FontAwesome";
   font-weight: 900;
-  content: "\f0da";
+  content: "\f0d7";
   color: #838383;
   display: inline-block; /* Enable widths */
   width: 1em; /* Set width across all characters */
@@ -428,7 +469,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .top-bar .flex-box .center .search .search-select[open] .search-select__list:after {
   font-family: "FontAwesome";
   font-weight: 900;
-  content: "\f0d7";
+  content: "\f0d8";
   color: #838383;
   display: inline-block; /* Enable widths */
   width: 1em; /* Set width across all characters */
@@ -493,7 +534,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   letter-spacing: 0.025em;
   color: #a4a4a4;
   margin-left: -4px;
-  padding-left: 20px;
+  padding: 0 20px 0;
 }
 .top-bar .flex-box .center .search button {
   width: 38px;
