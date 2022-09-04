@@ -103,22 +103,24 @@
   }
 
   &-form {
+    align-items: center;
     margin: 148px auto 0;
 
     &__title {
-      text-align: center;
       font-size: 24px;
       font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 0.025em;
       color: $main-text;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      line-height: 24px;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+      color: $main-text;
       margin-bottom: 35px;
-
-      .subtitle {
-        font-size: 14px;
-        line-height: 24px;
-
-      }
     }
 
     &__email {
@@ -143,9 +145,8 @@
 
 .footer-bar {
   .brand-about {
-    margin-top: 109px;
     width: 448px;
-    margin-right: 63px;
+    padding: 109px 63px 79px 0;
 
     &__logo {
       width: 59px;
@@ -176,7 +177,7 @@
     flex: 1 0 50%;
     display: flex;
     justify-content: space-between;
-    margin-top: 123px;
+    padding: 123px 0 79px 0;
 
     .nav-box {
       flex: 1 0 30%;
@@ -210,7 +211,6 @@
 
   .bottom-bar {
     height: 79px;
-    margin-top: 79px;
     background-color: #e6e6e6;
 
     .flex-box {

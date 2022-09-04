@@ -55,6 +55,10 @@ $location-bg: #f8f3f4;
 
 // ------ General styles ------
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   line-height: 1.2;
@@ -171,9 +175,13 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 // ------ Common styles ------
 
 .wrapper {
-  min-width: max-content;
-  white-space: nowrap;
-  //width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 .x-container {
@@ -189,6 +197,11 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 
 .flex-box {
   display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
@@ -242,7 +255,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     color: $white;
     background: $highlighted;
     border: 1px solid $highlighted;
-    animation: vibrate-3 0.5s linear 2s infinite both;
+    animation: vibrate-3 0.5s linear 1s infinite both;
   }
 }
 
